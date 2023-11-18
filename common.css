@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hide{
+    display: none;
+}
+.btn_round{
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #d4e6f1;
+    cursor: pointer;
+}
+.btn_round:hover{
+    transition: all 0.3s;
+    background-color: #76b6ea;
+}

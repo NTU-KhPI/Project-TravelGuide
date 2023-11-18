@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #171717;
+    background-size: cover;
+}
+.lf_container{
+    width: 600px;
+    background-color: #f2f2f2;
+}
+.lf_title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.form hr{
+    border: 0;
+    height: 1px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: #1717171f;
+}
+.lf_main{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 100px;
+}
+.lf_main div{
+    width: 300px;
+}
+.lf_username{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+.lf_img{
+    width: 200px;
+    height: 332px;
+}
+.lf_input_gr{
+    margin-bottom: 1rem;
+}
+.lf_input_gr h4{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.lf_input{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 3px solid #1717171f;
+    background: #f2f2f2;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.lf_input:focus{
+    border-color: #78b6ea;
+}
+.msg_ofset{
+    margin-bottom: 1.05rem;
+}
+.msg_error{
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #cc3333
+}
+.input_error{
+    border-color: #cc3333;
+}
+.lf_btn{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    background-color: #d2b4de;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.lf_btn:hover{
+    background-color: #cb9cdd;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.lf_btn:active{
+    transform: scale(0.95);
+}
+.lf_link{
+    text-decoration: none;
+    color: #274d82;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.lf_link:hover{
+    color: #171717;
+    text-decoration-line: underline;
+}
