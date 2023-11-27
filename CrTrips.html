@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Trips</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="style_crt.css">
+        <link rel="stylesheet" href="style_navbar.css">
+        <link rel="stylesheet" href="common.css">
+    </head>5
+    <body>
+        <!--====================================Main menu====================================-->
+        <header class="main_menu">
+            <div class="container">
+                <nav class="navbar">
+                    <!--===Logo====-->
+                    <a href=""> <img src="icons/tmp_ico1.png"> </a>
+                    <!--===Main btns====-->
+                    <ul class="navbar_items">
+                        <li class="navbar_item"><a class="navbar_item_btn" id="sbmo">Trips</a>
+                            <!--===Submenu1====-->
+                            <div class="dropdown hide">
+                                <ul class="nb_dropdown_menu">
+                                    <li class="dropdown_item">
+                                        <a href="CrTrips.html" class="dropdown_item_btn">Plan a trip</a></li>
+                                    <li class="dropdown_item">
+                                        <a href="" class="dropdown_item_btn">View preplaned trips</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="navbar_item"><a class="navbar_item_btn">More</a></li>
+                    </ul>
+                    <!--===Sign in====-->
+                    <div>
+                        <a href="Login.html" class="navbar_signin_btn" id="signin_btn" target="login_form">Sign in</a>
+                        <img src="icons/UnassignedUser.png" class="navbar_singin_user hide" id="sbmo">
+                        <!--===Submenu2(when singed in)====-->
+                        <div class="dropdown_user hide">
+                            <div>
+                                <img src="icons/UnassignedUser.png" class="dropdown_userico">
+                                <h3 class="dropdown_username">User name</h3>
+                            </div>
+                            <hr>
+                            <!--===Submenu2 btns===-->
+                            <ul class="nb_dropdown_menu">
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">View profile</a></li>
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">My trips</a></li>
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <main style="padding-top: 120px;">
+            <section id="cr_st1" class="">
+                <div class="container">
+                    <h3 id="title_crt">Where do you want to go?</h3>
+                    <div class="crt_p">
+                        <div class="input_gr" style="max-height: 500px;">
+                            <p>Country</p>
+                            <input type="text" class="input_b msg_ofset" id="sel_c" placeholder="Country">
+                            <div class="msg_error"></div>
+                        </div>
+                        <div class="input_gr" style="max-height: 500px;">
+                            <p>Place</p>
+                            <input type="text" class="input_b msg_ofset" id="sel_p" placeholder="City">
+                            <div class="msg_error"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cr_st2" class="hide">
+                <div class="container">
+                    <h3 id="title_crt">How do you want to select places?</h3>
+                    <div class="crt_p">
+                        <div id="sel_sel">
+                            <div class="input_gr">
+                                <p>Select places individualy</p>
+                                <button class="btn_continue bcb" id="btn_si">Individualy</button>
+                            </div>
+                            <div class="input_gr">
+                                <p>Select filters</p>
+                                <button class="btn_continue bcb" id="btn_sf">Filters</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cr_st3" class="hide">
+                <p style="padding-top: 120px;">Load here</p>
+            </section>
+            <!--
+            <section id="cr_st3" class=hide>
+                <div class="container">
+                    <div class="crt_p">
+                        <div class="input_gr">
+                            <h4>Date</h4>
+                            <input type="text" class="input_b msg_ofset" placeholder="D/M - D/M">
+                            <div class="msg_error"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            -->
+            
+            <div class="sel_div" id="sel_places">
+                <div class="container" style="padding-top: 2rem;">
+                    <section id="cr_st1_c" class="">
+                        <p id="title_ppl">Popular places</p>
+                        <ul id="dest_div">
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 1</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 2</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 3</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 4</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 5</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 6</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 7</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 8</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 9</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 10</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 11</div>
+                            </li>
+                            <li>
+                                <img src="icons/tmp_place_ico.png" class="dest_ico">
+                                <div class="dest_name">Place 12</div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="cr_st2_c" class="hide" style="padding-left: 20%; padding-right: 20%;">
+                        <h3 id="title_ppl">What would you like to visit on your trip?</h3>
+                        <p style = "padding-bottom: 3rem;">Choose as many as you'd like</p>
+                        <ul id="dest_div">
+                            <li>
+                                <div class="filt_box" id="filter1">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 1
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter2">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 2
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter3">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 3
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter4">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 4
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter5">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 5
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter6">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 6
+                                </div>
+                            </li>
+                            <li>
+                                <div class="filt_box" id="filter6">
+                                    <img src="icons/info_tmp.png" style="width: 3rem; border-radius: 1.5rem;">
+                                    Filter 7
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section id="cr_st3_c" class="hide" style="padding-left: 10%; padding-right: 10%;">
+                        <div class="input_gr" style="max-height: 500px;">
+                            <p>Search places</p>
+                            <input type="text" class="input_b msg_ofset" id="sel_pl" style="width: 50%; background-color: #ffffff;" placeholder="Place1, Place2, Palce3">
+                            <p>Filters</p>
+                            <details class="cust_sel">
+                                <summary>
+                                    <p id="filt_sel" style="font-size: 0.9rem;">Selected everything</p>
+                                </summary>
+                                <ul id="filt_list">
+                                    <li class="item_sel" id="item1">Filter1</li>
+                                    <li class="item_sel" id="item2">Filter2</li>
+                                    <li class="item_sel" id="item3">Filter3</li>
+                                    <li class="item_sel" id="item4">Filter4</li>
+                                    <li class="item_sel" id="item5">Filter5</li>
+                                    <li class="item_sel" id="item6">Filter6</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <ul id="dest_div">
+                            <li class="dest_desc">
+                                <div>
+                                    <img src="icons/tmp_place_ico.png" class="dest_ico" style="border-radius: 0;">
+                                    <div class="dest_name">Place 1</div>
+                                </div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus in quasi inventore, culpa dolorem a, sint est similique quam placeat eveniet laudantium?
+                            </li>
+                            <li class="dest_desc">
+                                <div>
+                                    <img src="icons/tmp_place_ico.png" class="dest_ico" style="border-radius: 0;">
+                                    <div class="dest_name">Place 2</div>
+                                </div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus in quasi inventore, culpa dolorem a, sint est similique quam placeat eveniet laudantium?
+                            </li>
+                            <li class="dest_desc">
+                                <div>
+                                    <img src="icons/tmp_place_ico.png" class="dest_ico" style="border-radius: 0;">
+                                    <div class="dest_name">Place 3</div>
+                                </div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus in quasi inventore, culpa dolorem a, sint est similique quam placeat eveniet laudantium?
+                            </li>
+                            <li class="dest_desc">
+                                <div>
+                                    <img src="icons/tmp_place_ico.png" class="dest_ico" style="border-radius: 0;">
+                                    <div class="dest_name">Place 4</div>
+                                </div>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem minus in quasi inventore, culpa dolorem a, sint est similique quam placeat eveniet laudantium?
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            <!--
+            <div class="sel_div hide" id="sel_filt">
+                <div class="container" style="padding-top: 2rem;">
+                    <h3 id="title_ppl">What do you want to do on your trip?</h3>
+                    <ul id="dest_div">
+
+                    </ul>
+                </div>
+            </div>
+            -->
+        </main>
+
+        <!--====================================Foooter====================================-->
+        <footer id="footer_cr">    
+            <div id="progbar">
+                 <div id="progbar_prog"></div>
+            </div>
+            <div class="container">
+                <div id="pan_prog">
+                    <button class="btn_continue bcs hide" id="btn_c_b">Back</button>
+                    <button class="btn_continue bcs" id="btn_c_n">Continue</button>
+                </div>
+            </div>
+        </footer>
+
+        <div class="screen_fixed hide"></div>
+        <div class = "form_al cr_state hide">
+            <div class="close_btn"></div>
+            <iframe scrolling="no" name="login_form" scr="Login.html" class="iframe_login"></iframe>
+        </div>
+
+        <script src="scripts_crt.js"></script>
+        <script src="scripts_lf.js"></script>
+        <script src="scripts_common.js"></script>
+    </body>
+</html>

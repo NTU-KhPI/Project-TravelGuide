@@ -1,19 +1,81 @@
+/*@import url('https://fonts.google.com/specimen/Montserrat?query=Mont&display=swap');*/
 *{
     margin: 0;
     padding: 0;
 }
+body{
+    font-family: 'Montserrat', serif;
+    font-size: 18px;
+    color: #171717
+}
+.input_b{
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: 3px solid #1717171f;
+    background: #f2f2f2;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.input_b:focus{
+    border-color: #78b6ea;
+}
+.msg_ofset{
+    margin-bottom: 1.05rem;
+}
+.msg_error{
+    padding-top: 0.2rem;
+    font-size: 0.9rem;
+    color: #cc3333
+}
+.input_error{
+    border-color: #cc3333;
+}
 .hide{
     display: none;
 }
-.btn_round{
-    border-radius: 50px;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border: none;
-    background-color: #d4e6f1;
-    cursor: pointer;
-}
-.btn_round:hover{
+
+.cust_sel{ 
+    display: block;
+    box-sizing: border-box;
+    width: 30%;
+    padding: 0.4rem;
+    border-radius: 7px;
+    font-size: 0.9rem;
+    border: 3px solid #1717171f;
+    background-color: #fff;
     transition: all 0.3s;
-    background-color: #76b6ea;
+}
+.cust_sel:hover{
+    border-color: #78b6ea;
+}
+.cust_sel summary {
+	cursor: pointer;
+	list-style: none;
+}
+.cust_sel ul {
+	box-sizing: border-box;
+	max-height: 5rem;
+	overflow-y: auto;
+    list-style-type: none;
+}
+.cust_sel li {
+	padding: 0.3rem;
+    border-bottom: 1px solid #1717171f;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.cust_sel li:hover{
+	background-color: #1717170c;
+}
+.cust_sel li:first-child {
+	border-top: 1px solid #1717171f;
+}
+.cust_sel li:last-child {
+	border-bottom: none;
+}
+.item_sel_s{
+    background-color: #d4e6f1;
 }

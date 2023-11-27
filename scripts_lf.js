@@ -10,26 +10,31 @@ function setInputError(inputElement, message) {
     inputElement.parentElement.querySelector(".msg_error").textContent = message;
     inputElement.classList.remove("msg_ofset");
 }
+/*
+function loginSuccess() {
+    document.querySelector(".form_al").classList.add("hide");
+    document.querySelector(".screen_fixed").classList.add("hide");
+}*/
 
 document.addEventListener("DOMContentLoaded", () => {
-    const loginForm = document.querySelector("#login");
-    const createAccountForm = document.querySelector("#create");
+    const loginForm = document.getElementById("login");
+    const createAccountForm = document.getElementById("create");
 
     //===========Switch forms===========
-    document.querySelector("#create_account").addEventListener("click", e => {
+    document.getElementById("create_account").addEventListener("click", e => {
         e.preventDefault();
         loginForm.classList.add("hide");
         createAccountForm.classList.remove("hide");
     });
     //===========Switch forms===========
-    document.querySelector("#sing_in").addEventListener("click", e => {
+    document.getElementById("sing_in").addEventListener("click", e => {
         e.preventDefault();
         loginForm.classList.remove("hide");
         createAccountForm.classList.add("hide");
     });
 
     //===========Check for errors===========
-    document.querySelectorAll(".lf_input").forEach(inputElement => {
+    document.querySelectorAll(".input_b").forEach(inputElement => {
         //===========Check password in create===========
         inputElement.addEventListener("blur", e => {
             if (e.target.id === "cr_password" && e.target.value.length > 0 && e.target.value.length < 10) {
@@ -53,7 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("btn_log").onclick = function () {
         if(document.getElementById("log_mail").value != 0) {
             if(document.getElementById("log_password").value != 0) {
-                location.href = "MainPage.html";
+                //location.href = "MainPage.html";
+                //loginSuccess();
             }
             else {
                 setInputError(document.getElementById("log_password"), "Enter a password");
@@ -77,7 +83,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         if(!document.getElementById("cr_password").classList.contains('input_error') && 
                            !document.getElementById("cr_password_conf").classList.contains('input_error'))
                         {
-                            location.href = "MainPage.html";
+                            //location.href = "MainPage.html";
                         }
                     }
                     else {
