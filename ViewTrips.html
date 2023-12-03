@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Created trips</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="style_navbar.css">
+        <link rel="stylesheet" href="style_vtr.css">
+        <link rel="stylesheet" href="common.css">
+    </head>
+    <body>
+        <header class="main_menu">
+            <div class="container">
+                <nav class="navbar">
+                    <!--===Logo====-->
+                    <a href="main.html"> <img src="foldico/tmp_ico1.png"> </a>
+                    <!--===Main btns====-->
+                    <ul class="navbar_items">
+                        <li class="navbar_item"><a class="navbar_item_btn" id="sbmo">Trips</a>
+                            <!--===Submenu1====-->
+                            <div class="dropdown hide">
+                                <ul class="nb_dropdown_menu">
+                                    <li class="dropdown_item">
+                                        <a href="CrTrips.html" class="dropdown_item_btn">Plan a trip</a></li>
+                                    <li class="dropdown_item">
+                                        <a href="" class="dropdown_item_btn">View preplaned trips</a></li>
+                                </ul>
+                            </div>
+
+                        </li>
+                        <li class="navbar_item"><a class="navbar_item_btn">More</a></li>
+                    </ul>
+                    <!--===Sign in====-->
+                    <div>
+                        <a href="Login.html" class="navbar_signin_btn" id="signin_btn" target="login_form">Sign in</a>
+                        <img src="foldico/UnassignedUser.png" class="navbar_singin_user hide" id="sbmo">
+                        <!--===Submenu2(when singed in)====-->
+                        <div class="dropdown_user hide">
+                            <div>
+                                <img src="foldico/UnassignedUser.png" class="dropdown_userico">
+                                <h3 class="dropdown_username">User name</h3>
+                            </div>
+                            <hr>
+                            <!--===Submenu2 btns===-->
+                            <ul class="nb_dropdown_menu">
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">View profile</a></li>
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">My trips</a></li>
+                                <li class="dropdown_item">
+                                    <a href="" class="dropdown_item_btn">Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <section id="banner">
+            <h2 id="banner_slogan">Find carefully prepared Trips</h2>
+            <input type="search" class="input_b" id="find_trip" placeholder="Seach by Trip name">
+        </section>
+        <section id="sec_sel_t">
+            <div class="container" style="text-align: center;">
+                <p id="title_banner">Want to plan your trip withount worries? We have what you need!</p>
+                <ul id="waw">
+                    <li class="waw_li">
+                        <img src="foldico/info_tmp.png">
+                        <p>We have all kinds of preplaned tours all around the world! Find what you like the most.</p>
+                    </li>
+                    <li class="waw_li">
+                        <img src="foldico/info_tmp.png">
+                        <p>No need in additional planning. We planed our trip with all sigtheseeing and transportation in mind.</p>
+                    </li>
+                    <li class="waw_li">
+                        <img src="foldico/info_tmp.png">
+                        <p>We tried to make our trips as affordable as possible so more people can afford it.</p>
+                    </li>
+                 </ul>
+            </div>
+        </section>
+        
+        <form action="viewtrips.php">
+            <div class="container">
+                <p id="poptr">Popular trips</p>
+                <p>Filters</p>
+                <details class="cust_sel">
+                    <summary>
+                        <p id="filt_sel" style="font-size: 0.9rem;">Selected everything</p>
+                        <button type="submit">Apply</button>
+                    </summary>
+                    <ul id="filt_list">
+                        <li class="item_sel" id="item1">Tag1</li>
+                        <li class="item_sel" id="item2">Tag2</li>
+                        <li class="item_sel" id="item3">Tag3</li>
+                        <li class="item_sel" id="item4">Tag4</li>
+                        <li class="item_sel" id="item5">Tag5</li>
+                        <li class="item_sel" id="item6" value="0">Tag6</li>
+                    </ul>
+                </details>
+            </div>
+            <ul>
+                <li class="container_v">
+                    <div class="trip_info">
+                        <div>
+                            <img src="foldico/tmp_place_ico.png" class="img_trip">
+                            <div class="star_bg">★★★★★</div>
+                            <div class="star_bg star_rate" style="width: 9.4rem;">★★★★★</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h3>Trip name 2</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Molestiae omnis obcaecati iste temporibus repellat, ipsam 
+                            animi aspernatur in enim totam doloribus placeat pariatur, 
+                            nemo, vitae repudiandae quae ipsa minima cum!
+                            <div class="add_info">
+                                <div class="info_items" style="display: flex; align-items: center; gap: 1rem">
+                                    Tags:
+                                        <ul class="info_tags">
+                                        <li>
+                                            Tag2
+                                        </li>
+                                        <li>
+                                            Tag3
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info_items">
+                                    Location:
+                                </div>
+                                <div class="info_items" style="display: flex; align-items: center; gap: 1rem">
+                                    Places:
+                                        <ul class="info_tags">
+                                        <li>
+                                            Loc1
+                                        </li>
+                                        <li>
+                                            Loc2
+                                        </li>
+                                        <li>
+                                            Loc3
+                                        </li>
+                                        <li>
+                                            Loc4
+                                        </li>
+                                        <li>
+                                            Loc5
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <li class="container_v">
+                    <div class="trip_info">
+                        <div>
+                            <img src="foldico/tmp_place_ico.png" class="img_trip">
+                            <div class="star_bg">★★★★★</div>
+                            <div class="star_bg star_rate" style="width: 100%;">★★★★★</div>
+                        </div>
+                        <div style="display: flex; flex-direction: column;">
+                            <h3>Trip name 1</h3>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Molestiae omnis obcaecati iste temporibus repellat, ipsam 
+                            animi aspernatur in enim totam doloribus placeat pariatur, 
+                            nemo, vitae repudiandae quae ipsa minima cum!
+                            <div class="add_info">
+                                <div class="info_items" style="display: flex; align-items: center; gap: 1rem">
+                                    Tags:
+                                        <ul class="info_tags">
+                                        <li>
+                                            Tag1
+                                        </li>
+                                        <li>
+                                            Tag2
+                                        </li>
+                                        <li>
+                                            Tag3
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="info_items">
+                                    Location:
+                                </div>
+                                <div class="info_items" style="display: flex; align-items: center; gap: 1rem">
+                                    Places:
+                                        <ul class="info_tags">
+                                        <li>
+                                            Loc1
+                                        </li>
+                                        <li>
+                                            Loc2
+                                        </li>
+                                        <li>
+                                            Loc3
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </form>
+        
+        <footer class="com_footer">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Odit nam doloribus soluta iusto cupiditate recusandae aut, 
+                placeat quia quam animi voluptatum natus sequi aliquam ipsam 
+                molestiae voluptas dolore illum quisquam?
+            </div>
+        </footer>
+        
+        <div class="screen_fixed hide"></div>
+        <div class = "form_al cr_state hide">
+            <div class="close_btn"></div>
+            <iframe scrolling="no" name="login_form" scr="Login.html" class="iframe_login"></iframe>
+        </div>
+
+        <script src="scripts_lf.js"></script>
+        <script src="scripts_common.js"></script>
+    </body>
+</html>

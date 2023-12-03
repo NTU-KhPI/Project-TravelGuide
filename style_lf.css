@@ -4,7 +4,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
     color: #171717;
     background-size: cover;
 }
@@ -36,7 +35,7 @@ body{
 .lf_username{
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: space-between;
     gap: 20px;
 }
 .lf_img{
@@ -45,37 +44,13 @@ body{
 }
 .lf_input_gr{
     margin-bottom: 1rem;
+    width: 100%;
 }
 .lf_input_gr h4{
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
     font-weight: 500;
-}
-.lf_input{
-    display: block;
-    width: 100%;
-    padding: 0.7rem;
-    box-sizing: border-box;
-    border-radius: 7px;
-    border: 3px solid #1717171f;
-    background: #f2f2f2;
-    outline: none;
-    transition: border-color 0.3s;
-}
-.lf_input:focus{
-    border-color: #78b6ea;
-}
-.msg_ofset{
-    margin-bottom: 1.05rem;
-}
-.msg_error{
-    padding-top: 0.2rem;
-    font-size: 0.9rem;
-    color: #cc3333
-}
-.input_error{
-    border-color: #cc3333;
 }
 .lf_btn{
     width: 100%;

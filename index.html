@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Test page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style_navbar.css">
         <link rel="stylesheet" href="common.css">
     </head>
     <body>
@@ -12,7 +14,7 @@
             <div class="container">
                 <nav class="navbar">
                     <!--===Logo====-->
-                    <a href=""> <img src="icons/tmp_ico1.png"> </a>
+                    <a href="index.html"> <img src="foldico/tmp_ico1.png"> </a>
                     <!--===Main btns====-->
                     <ul class="navbar_items">
                         <li class="navbar_item"><a class="navbar_item_btn" id="sbmo">Trips</a>
@@ -20,9 +22,9 @@
                             <div class="dropdown hide">
                                 <ul class="nb_dropdown_menu">
                                     <li class="dropdown_item">
-                                        <a href="" class="dropdown_item_btn">Plan a trip</a></li>
+                                        <a href="CrTrips.html" class="dropdown_item_btn">Plan a trip</a></li>
                                     <li class="dropdown_item">
-                                        <a href="" class="dropdown_item_btn">View preplaned trips</a></li>
+                                        <a href="viewtrips.php" class="dropdown_item_btn">View preplaned trips</a></li>
                                 </ul>
                             </div>
 
@@ -32,11 +34,11 @@
                     <!--===Sign in====-->
                     <div>
                         <a href="Login.html" class="navbar_signin_btn" id="signin_btn" target="login_form">Sign in</a>
-                        <img src="icons/UnassignedUser.png" class="navbar_singin_user hide" id="sbmo">
+                        <img src="foldico/UnassignedUser.png" class="navbar_singin_user hide" id="sbmo">
                         <!--===Submenu2(when singed in)====-->
                         <div class="dropdown_user hide">
                             <div>
-                                <img src="icons/UnassignedUser.png" class="dropdown_userico">
+                                <img src="foldico/UnassignedUser.png" class="dropdown_userico">
                                 <h3 class="dropdown_username">User name</h3>
                             </div>
                             <hr>
@@ -57,21 +59,71 @@
 
         <main>
             <!--====================================Banner====================================-->
-            <section class="banner">
+            <section id="banner">
                 <div>
-                    <h1>Lorem ipsum</h1>
-                    <h3>Lorem ipsum, dolor sit amet</h3>
-                </div>
-                <div class="box">
-                    <h3>Lorem ipsum, dolor sit amet</h3>
+                    <div id="banner_slogan">
+                        <h2 style="font-size: 3rem;">Travel easy with TrailMaker</h2>
+                        <p style="margin-top: 0.5rem;">Easiest way to plan your trips</p>
+                    </div>
+                    <img src="foldico/mp_bg.png" alt="Seaside town" style="position: absolute; max-height: 550px; right: 0; top: 0">
                 </div>
             </section>
-            <!--====================================Simplified Trip-selector====================================-->
-            <section style="height: 1600px;">
-                <div>
+            <section id="sec_sel_t">
+                <div class="container" style="text-align: center;">
+                    <p id="title_banner">How to get Started?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Voluptatem voluptatum sequi consequatur sapiente nam. 
+                        Facere iusto deserunt cupiditate atque sit nulla, quod in, officia corporis quia non vel minima quos!</p>
+                    <ul id="waw">
+                        <li class="waw_li">
+                            <img src="foldico/info_tmp.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li class="waw_li">
+                            <img src="foldico/info_tmp.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li class="waw_li">
+                            <img src="foldico/info_tmp.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </li>
+                        <li class="waw_li">
+                            <img src="foldico/info_tmp.png">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </li>
+                     </ul>
+                     <p>Alredy started?<a id="LoginLink">Log in</a> to view your created trips</p>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <ul id="waw">
+                        <li class="sel_type" style="background-color: #eff9ff;">
+                            <p class="sel_name">Create your own from scratch</p>
+                            <img src="foldico/tmp_featured_box1.png">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Omnis molestias nihil provident doloribus in cum illo impedit</p>
+                            <button class="btn_sel_t btn_pct">Find your jurney</button>
+                            </li>
+                        <li class="sel_type" style="background-color: #ffefff;">
+                            <p class="sel_name">View already created trips</p>
+                            <img src="foldico/tmp_featured_box1.png">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Omnis molestias nihil provident doloribus in cum illo impedit</p>
+                            <button class="btn_sel_t btn_ct">Create your jurney</button>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
+        <footer class="mp_footer">
+            <div class="container">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Odit nam doloribus soluta iusto cupiditate recusandae aut, 
+                placeat quia quam animi voluptatum natus sequi aliquam ipsam 
+                molestiae voluptas dolore illum quisquam?
+            </div>
+        </footer>
 
         <div class="screen_fixed hide"></div>
         <div class = "form_al cr_state hide">
@@ -81,5 +133,6 @@
 
         <script src="scripts_mp.js"></script>
         <script src="scripts_lf.js"></script>
+        <script src="scripts_common.js"></script>
     </body>
 </html>

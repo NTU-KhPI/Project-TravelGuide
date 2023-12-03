@@ -3,37 +3,38 @@
     <head>
         <meta charset="utf-8">
         <title>Login page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="style_lf.css">
         <link rel="stylesheet" href="common.css">
     </head>
     <body>
         <div class="lf_container">
             <!--====================================LOGIN FORM====================================-->
-            <form class="form" id="login">
+            <form class="form" id="login" action="login.php" method="post">
                 <h1 class="lf_title">Login</h1>
                 <hr>
                 <!--=======================MAIN BODY=======================-->
-                <div class="lf_main">
+                <div class="lf_main" action="login.php">
                     <div>
                         <div class="lf_input_gr">
                             <h4>Email address</h4>
-                            <input type="text" class="lf_input msg_ofset" id="log_mail" autofocus placeholder="Email">
+                            <input type="email" class="input_b msg_ofset" id="log_mail" name="log_mail" autofocus placeholder="Email">
                             <div class="msg_error"></div>
                         </div>
                         <div class="lf_input_gr">
                             <h4>Password</h4>
-                            <input type="password" class="lf_input msg_ofset" id="log_password" autofocus placeholder="Password">
+                            <input type="password" class="input_b msg_ofset" id="log_password" name="log_password" autofocus placeholder="Password">
                             <div class="msg_error"></div>
                         </div>
                         <a href="" class="lf_link">Forgot password?</a>
-                        <button class="lf_btn" id="btn_log" type="button">Continue</button>
+                        <button class="lf_btn" id="btn_log" type="button">Contdddinue</button>
                     </div>
-                    <img src="icons/tmp_featured_tall1.png" class="lf_img">
+                    <img src="foldico/tmp_featured_tall1.png" class="lf_img">
                 </div>
                 <!--=======================================================-->
                 <hr>
                 <p>
-                    Don't have an account yet? <a href="" class="lf_link" id="create_account">Create new account</a>
+                    Don't have anadqwrqwr account yet? <a href="ViewTrips.html" class="lf_link" id="create_account">Create new account</a>
                 </p>
             </form>
             <!--====================================REGISTRATION FORM====================================-->
@@ -44,28 +45,28 @@
                         <div class="lf_username">
                             <div class="lf_input_gr">
                                 <h4>First name</h4>
-                                <input type="text" class="lf_input msg_ofset" id="cr_name1" autofocus placeholder="Name">
+                                <input type="text" class="input_b msg_ofset" id="cr_name1" autofocus placeholder="Name">
                                 <div class="msg_error"></div>
                             </div>
                             <div class="lf_input_gr">
                                 <h4>Last name (optional)</h4>
-                                <input type="text" class="lf_input msg_ofset" id="cr_name2" autofocus placeholder="Surname">
+                                <input type="text" class="input_b msg_ofset" id="cr_name2" autofocus placeholder="Surname">
                                 <div class="msg_error"></div>
                             </div>
                         </div>
                         <div class="lf_input_gr">
                             <h4>Email address</h4>
-                            <input type="text" class="lf_input msg_ofset" id="cr_mail" autofocus placeholder="Email">
+                            <input type="email" class="input_b msg_ofset" id="cr_mail" autofocus placeholder="Email">
                             <div class="msg_error"></div>
                         </div>
                         <div class="lf_input_gr">
                             <h4>Password</h4>
-                            <input type="password" id="cr_password" class="lf_input msg_ofset" autofocus placeholder="Password">
+                            <input type="password" id="cr_password" class="input_b msg_ofset" autofocus placeholder="Password">
                             <div class="msg_error"></div>
                         </div>
                         <div class="lf_input_gr">
                             <h4>Confirm Password</h4>
-                            <input type="password" id="cr_password_conf" class="lf_input msg_ofset" autofocus placeholder="Password">
+                            <input type="password" id="cr_password_conf" class="input_b msg_ofset" autofocus placeholder="Password">
                             <div class="msg_error"></div>
                         </div>
                         <button class="lf_btn" id="btn_create" type="button">Continue</button>
